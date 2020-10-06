@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.example.securelogin.domain.repository.config.ConfigRepository">
+
+	<resultMap id="configResultMap" type="Config">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="value" column="value" />
+	</resultMap>
+
+	<select id="findByName" parameterType="string"
+		resultMap="configResultMap">
+    <![CDATA[
+        SELECT
+            a.id,
+            a.name,
+            a.value
+        FROM
+            config a
+        WHERE
+            a.name = #{name}
+    ]]>
+	</select>
+
+
+	<insert id="createConfig" parameterType="Config">
+    <![CDATA[
+        INSERT INTO Config (
+            name,
+            value
+        ) VALUES (
+            #{name},
+            #{value}
+        )
+    ]]>
+	</insert>
+
+
+</mapper>

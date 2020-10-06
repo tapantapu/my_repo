@@ -1,0 +1,48 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="collectionBean"
+		class="SpringCollectionInjection.SpringCollectionInjection.JavaCollection">
+		<!-- <property name="name" value="Tapan" /> -->
+
+		<property name="addressList">
+			<list>
+				<value>IND</value>
+				<value>UK</value>
+				<value>UAE</value>
+				<value>USA</value>
+			</list>
+		</property>
+
+		<property name="addressSet">
+			<set>
+				<value>IND</value>
+				<value>UK</value>
+				<value>UAE</value>
+				<value>USA</value>
+			</set>
+		</property>
+
+		<property name="addressMap">
+			<map>
+				<entry key="1" value="IND" />
+				<entry key="2" value="UK" />
+				<entry key="3" value="UAE" />
+				<entry key="4" value="USA" />
+			</map>
+		</property>
+
+		<property name="addressProp">
+			<props>
+				<prop key="1">IND</prop>
+				<prop key="2">UK</prop>
+				<prop key="3">UAE</prop>
+				<prop key="4">USA</prop>
+			</props>
+		</property>
+
+	</bean>
+
+</beans>

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: secure-login-initdb
+Implementation-Version: 5.5.1.RELEASE
+Built-By: etappar
+Implementation-Vendor-Id: com.example.securelogin
+Build-Jdk: 1.8.0_181
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: TERASOLUNA Framework Team
+
