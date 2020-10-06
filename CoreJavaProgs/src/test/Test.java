@@ -11,7 +11,7 @@ public class Test {
 		Test test=new Test();
 		test.m();
 
-		System.out.println();
+		System.out.println("HEllo");
 		System.out.println();
 		System.out.println();
 		System.out.println();
