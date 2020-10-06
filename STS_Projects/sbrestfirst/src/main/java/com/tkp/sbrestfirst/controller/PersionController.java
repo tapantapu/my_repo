@@ -29,7 +29,7 @@ public class PersionController {
 		return person;
 	}
 
-	//@RequestMapping(value = "/person/update", method = RequestMethod.POST) ****
+	//@RequestMapping(value = "/person/update", method = RequestMethod.POST)
 	@PostMapping(value = "/person/update")
 	public Person updatePerson(@RequestParam(name = "name", required = true) String name,
 			@RequestParam(name = "id", required = true) int id) {
